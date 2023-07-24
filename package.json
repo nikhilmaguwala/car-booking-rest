@@ -1,0 +1,14 @@
+{
+  "name": "car-booking-rest",
+  "version": "1.0.0",
+  "description": "### Welcome to the developer interview project of the Audi Business Innovation GmbH. This file will give you a brief introduction to the technologies and software needed for this project. In the getting started paragraph there are the instructions to build and run the code.",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd node && npm i && cd .. & cd react/car-booking-frontend && npm i & cd ../..",
+    "setup-env": "cd node && cp .env.example .env && cd .. & cd react/car-booking-frontend && cp .env.example .env & cd ../..",
+    "start-backend": "cd node && npm run start",
+    "start-frontend": "cd react/car-booking-frontend && npm start"
+  },
+  "author": "Nikhil Maguwala",
+  "license": "ISC"
+}

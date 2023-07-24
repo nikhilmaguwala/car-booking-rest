@@ -1,0 +1,20 @@
+.edit-icon {
+    font-size: 1.75em;
+    cursor: pointer;
+}
+
+.delete-icon {
+    font-size: 1.75em;
+    color: #CC0033;
+    cursor: pointer;
+}
+
+.check-icon {
+    font-size: 1.75em;
+    color: #4BB543;
+}
+
+.x-icon {
+    font-size: 1.75em;
+    color: #CC0033;
+}
