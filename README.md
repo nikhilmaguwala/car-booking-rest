@@ -1,97 +1,68 @@
-## ABI Developer Interview Project
+## Car Booking Full Stack Application
 
-###
-Welcome to the developer interview project of the Audi Business Innovation GmbH.
-This file will give you a brief introduction to the technologies and software needed for this project.
-In the getting started paragraph there are the instructions to build and run the code.
+#### Description
+
+* Full Stack React and Node Application With Swagger UI. This is Car booking Application built for my Interview Coding test. You can book Cars according to schedule when it is free. You can add Vehicles.
 
 ---
 
 #### Prerequisites
 
-* Either Java Development Kit >= 1.8 or Node.JS >= 10
+* Node.JS >= 14
 * IDE or editor of your choice
 
 #### Technologies
 
-For this project, there are wo different technology stacks you can choose from, one is Java based, the other one 
-Node.js based. Just pick whichever you like.
+* React
+* NodeJS
+* SQLite3
+* Sequelize
+* Swagger UI
+* OpenAPI
 
-For details and to see how to get started with either stack, please refer to the README in the corresponding 
-subdirectories. 
+#### Getting started
 
-#### Functionality
+To start this web application just follow these steps:
 
-Using the system, a _user_ can book _vehicles_ for a certain period of time. Through the REST API, _bookings_ can be 
-listed, created, and updated. Furthermore, _users_ can be listed and _vehicles_ can be listed and created. Vehicles
-have to have unique license plate numbers. Bookings are only possible for active vehicles. Also, a booking can only be 
-made, if there is no open or active booking of the same vehicle in the same period.
+1. Frotend & Backend Installation
 
-For details about what exactly each REST Resource provides, see the documentation in the Swagger UI.
+    ```bash
+    $ npm run install
+    ```
+      
+2. Create Frotend & Backend Environment Files
 
-Some initial test data is inserted into the system on startup.
+    ```bash
+    $ npm run setup-env
+    ```
+   
+3. Running Backend App
 
----
+    ```bash
+    $ npm run start-backend
+    ```
+   
+4. Running Frontend App
 
-#### Tasks
+   ```bash
+   $ npm run start-frontend
+   ```
 
-You can use either of the two existing implementations in `./node` or `./java` to solve the following tasks. They are
-functionally equivalent and you can pick whichever suits you better.
 
-##### Backend Part
+#### Information
 
-1. The customer wants the functionality to search for users by last name:
-    * Implement a new method in the <code>UserService</code> class that returns users by a given name
-    * Extend the existing API to expose the new functionality
+* Browse to following URL for Swagger Documentation:
 
-2. The customer wants to be able to insert new vehicles into the system via the API
-    * Implement an appropriate extension of the vehicle controller with suitable REST endpoint
-    * Persist new data
-    * (Optional) Validate the input data:
-        * all vehicle fields should be mandatory
-        * field <code>validTill</code> should be at least a future date
+   [http://localhost:8000/api-docs/](http://localhost:8000/api-docs/)
 
-##### Frontend Part
 
-The customer wants you to create a proof of concept for a nice JavaScript driven frontend admin console to manage users
-and vehicles. There are no detailed or technical specifications given except:
+* Browse to following URL to check Beautiful Frontend:
 
-* It should look nice
-* Intuitive to use
-* All implemented API functionality should be covered in the frontend
-    * Display all vehicles
-        * Insert new vehicle
-    * Display all users
-        * Provide search by last name functionality
-        * Show details of specific user
+   [http://localhost:3000/](http://localhost:3000/)
 
-3. Create a nice and intuitive frontend application as proof of concept that covers the given API functionality.
-Technically you are completely free, just choose an adequate tool stack.
+* This node backend is based JS and used sequelize tool to get along with sqlite3
+* Data is being automatically populated in SQLite memory database.
+* Changes lost when restarting application
+* All Endpoints can be tested locally with Swagger UI & React Frontend
 
-    * Angular, Vue, or React are quite popular, but any other frontend framework is fine, too.
-    * Talk to the provided API endpoints and find intuitive ways to display the data and a small navigation
-    * Single page application is preferred
-    * Focus on usability in views
-    * (Optional) Include frontend input validation
-    * (Optional) Focus on modularity in architecture
-
-Some Audi colors:
-
-    $black:                  #000;
-    $gray-darker:            #394249;
-    $gray-dark:              #434C53;
-    $gray:                   #6D7579;
-    $gray-light:             #B0B6B8;
-    $gray-lighter:           #D5D9D8;
-
-    $audi-red:               #CC0033;
-    $audi-dark-red:          #AA142D;
-
-There is a placeholder html page for your implementation at:
-
-[http://localhost:8080/admin/index.html](http://localhost:8080/admin/index.html)
-
-The file is located under <code>src/main/resources/static/admin/index.html</code> for the Java stack and 
-<code>static/admin/index.html</code> for the Node.js stack respectively.
-
-### Happy coding!
+### Thanks for the opportunity!
