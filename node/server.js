@@ -17,7 +17,7 @@ const options = {
         },
         servers: [
             {
-                url: 'http://localhost:' + HTTP_PORT
+                url: 'https://car-booking-service.onrender.com'
             }
         ]
     },

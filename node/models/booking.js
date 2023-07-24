@@ -18,14 +18,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.DATE,
             field: 'end_date'
         },
-        userId: {
-            type: DataTypes.UUID,
-            field: 'userId'
-        },
-        vehicleId: {
-            type: DataTypes.UUID,
-            field: 'vehicleId'
-        }
     }, {});
 
     return Booking;
